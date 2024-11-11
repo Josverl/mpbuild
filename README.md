@@ -3,7 +3,7 @@
 ## Usage
 
 ```bash
-> mpbuild build BOARD [VARIANT]
+> mpbuild build BOARD [VARIANT] -- [EXTRA_ARGS]
 ```
 
 ```bash
@@ -15,6 +15,14 @@
 ```
 
 - Should it list boards and variants? (yes, probably. Alternatively, '-a'.)
+
+## Example
+
+To build with additional parameters such as `USER_C_MODULES`:
+
+```bash
+> mpbuild build ESP32_GENERIC_S3 -- USER_C_MODULES=/home/user/micropython/ulab/code/micropython.cmake all
+```
 
 ## Development
 
